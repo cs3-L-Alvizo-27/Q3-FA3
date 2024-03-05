@@ -23,16 +23,16 @@
                 function solve() {
                     var num = document.getElementById('numInput').value;
                     var hundreds = " ";
-                    if (num.length == 3) {
-                     hundreds = num.charAt(0)*100;
-                    var tens =  num.charAt(1)*10;
-                    var ones = num.charAt(2);
+                     if (num.length == 3) {
+                         hundreds = num.charAt(0)*100;
+                         var tens =  num.charAt(1)*10;
+                         var ones = num.charAt(2);
                                          }
 
-                    if (num.length == 2){
-                        var tens =  num.charAt(0)*10;
-                        var ones = num.charAt(1);
-                    }
+                     if (num.length == 2){
+                         var tens =  num.charAt(0)*10;
+                         var ones = num.charAt(1);
+                                         }
                     output.innerHTML = hundreds + " " + tens + " " + ones;
                 }
                 
