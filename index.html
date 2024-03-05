@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <!-- DO NOT REMOVE THE STYLE LINKED FROM GITHUB-->
+                <link rel="stylesheet" href="https://laravelalvin.github.io/Q3FA3/style.css">
+              
+            </head>
+                 <!-- You are allowed to modify the HTML like adding events 
+                        such as onclick, onchange, onload
+                        But do not change the ID  -->
+
+                <div id="container">
+                    <input id="numInput">
+                    <button id="outputButton" onclick = "solve()">Decode</button>
+                    <h2>Breakdown: <span id="output">[Empty]</span></h2>
+                </div>
+
+            <script>
+                function solve() {
+                    var num = document.getElementById('numInput').value;
+                    var hundreds = " ";
+                    if (num.length == 3) {
+                     hundreds = num.charAt(0)*100;
+                    var tens =  num.charAt(1)*10;
+                    var ones = num.charAt(2);
+                                         }
+
+                    if (num.length == 2){
+                        var tens =  num.charAt(0)*10;
+                        var ones = num.charAt(1);
+                    }
+                    output.innerHTML = hundreds + " " + tens + " " + ones;
+                }
+                
+
+            </script>
+        </body>
+</html>
